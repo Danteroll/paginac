@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Participación social e institucional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #f0f7f4; --brand-1:#0ea5a4; --brand-2:#0f766e;
+      --ink:#0f172a; --muted:#475569; --card:#ffffffee; --ring: rgba(14,165,164,.35);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;color:var(--ink);background:var(--bg)}
+    .bg-hero{position:fixed; inset:0; z-index:-1; overflow:hidden}
+    .blob{position:absolute; filter:blur(60px); opacity:.25; animation:float 16s ease-in-out infinite}
+    .b1{background:#99f6e4; width:46vmax;height:46vmax; left:-10vmax; top:-10vmax}
+    .b2{background:#5eead4; width:42vmax;height:42vmax; right:-8vmax; top:10vmax; animation-delay:3s}
+    .b3{background:#a7f3d0; width:48vmax;height:48vmax; left:10vmax; bottom:-12vmax; animation-delay:6s}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    header{position:sticky;top:0;background:#fff9;border-bottom:1px solid #e2e8f0;backdrop-filter:blur(8px);z-index:20}
+    .brand{display:flex;align-items:center;gap:12px;padding:12px 0}
+    .logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--brand-1),var(--brand-2));color:#fff;font-weight:700;display:grid;place-content:center}
+    nav{display:flex;flex-wrap:wrap;gap:8px}
+    nav a{padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--ink);font-weight:600}
+    nav a.active, nav a:hover{background:var(--brand-1); color:#fff}
+    main{padding:24px 0 64px}
+    .grid{display:grid;grid-template-columns:1fr;gap:20px}
+    @media (min-width: 960px){.grid{grid-template-columns:320px 1fr}}
+    .card{background:var(--card);border:1px solid #e2e8f0;border-radius:16px;box-shadow:0 8px 20px rgba(2,6,23,.06);position:relative;overflow:hidden}
+    .card .body{padding:18px}
+    .h2{font-size:1.35rem;line-height:1.2;margin:0 0 8px}
+    .muted{color:var(--muted);font-size:.95rem}
+    .btn{appearance:none;border:0;border-radius:12px;padding:10px 14px;font-weight:600;cursor:pointer;transition:.2s; background:var(--brand-1); color:#fff}
+    .btn:hover{filter:brightness(.95)}
+    .btn.outline{background:#fff;color:var(--brand-2);border:2px solid var(--brand-1)}
+    .input{width:100%;padding:10px 12px;border:1.5px solid #cbd5e1;border-radius:12px}
+    .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:#ecfeff;color:#006b6b;font-weight:600;font-size:.8rem}
+    section{scroll-margin-top:84px}
+    .section{padding:14px}
+    .section h3{margin:0 0 8px;font-size:1.4rem}
+    .section p{margin:0 0 12px;color:var(--muted)}
+    .bullets{margin:0;padding-left:18px}
+    .bullets li{margin:8px 0}
+    .reveal{opacity:0;transform:translateY(8px);transition:opacity .35s ease, transform .35s ease}
+    .reveal.in{opacity:1;transform:none}
+    .strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .strip img{width:100%;height:160px;object-fit:cover;border-radius:14px;transition:transform .2s}
+    .strip img:hover{transform:scale(1.02)}
+    footer{border-top:1px solid #e2e8f0;background:#fff9}
+    .footer{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:16px 0}
+    a.link{color:var(--brand-2);text-decoration:underline;text-underline-offset:3px}
+    .link-overlay{position:absolute; inset:0; z-index:1}
+    .hero:hover{outline:3px solid var(--ring)}
+  </style>
+</head>
+<body>
+  <div class="bg-hero" aria-hidden="true">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  </div>
+
+  <header>
+    <div class="container brand">
+      <div class="logo" aria-hidden="true">E2</div>
+      <div>
+        <div style="font-size:1.15rem;font-weight:700;">AMBIENTE Y SUSTENTABILIDAD AGO-DIC 25</div>
+        <div class="muted" style="font-size:.9rem">Actividad Fundamental 1 - Equipo 2</div>
+      </div>
+    </div>
+    <div class="container" style="padding-bottom:12px">
+      <nav id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="agenda21.html">Agenda 21</a>
+        <a href="milenio.html">Declaración del Milenio</a>
+        <a href="desarrollo.html">Desarrollo sustentable</a>
+        <a href="participacion.html">Participación social e institucional</a>
+        <a href="economia.html">Economía y ambiente</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <aside>
+        <div class="card reveal">
+          <div class="body">
+            <h2 class="h2">Subir archivos</h2>
+            <p class="muted">Adjunta evidencias o materiales (PDF, imágenes, docs).</p>
+            <input id="file" class="input" type="file" multiple />
+            <div style="height:8px"></div>
+            <div id="fileList" class="muted" style="font-size:.9rem">Aún no hay archivos.</div>
+          </div>
+        </div>
+        <div style="height:16px"></div>
+        <div class="card reveal">
+        <div class="body">
+            <h2 class="h2">Descargas</h2>
+            <p class="muted">Documento de referencia (PDF externo).</p>
+            <a class="btn" href="pdf/desarollo.pdf" download="TFI_2015_larrouyet.pdf">
+            Descargar PDF
+            </a>
+        </div>
+        </div>
+        <div style="height:16px"></div>
+        <div class="card reveal">
+          <div class="body">
+            <h2 class="h2">Hipervínculos</h2>
+            <ul class="bullets">
+              <li><a class="link" href="https://www.un.org/sustainabledevelopment/es/" target="_blank" rel="noopener">ONU – ODS</a></li>
+              <li><a class="link" href="https://datos.gob.mx/" target="_blank" rel="noopener">Datos abiertos (MX)</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <section>
+        <div class="card section reveal hero" id="hero">
+          <div class="body">
+            <span class="pill">Gobernanza</span>
+            <h3 style="margin-top:6px;">Participación social e institucional</h3>
+            <p class="muted">Corresponsabilidad entre ciudadanía, gobierno, academia y empresas para diseñar, ejecutar y evaluar políticas públicas sustentables.</p>
+            <div style="display:flex;gap:10px;flex-wrap:wrap">
+              <a class="btn" href="#contenido">Ver contenido</a>
+              <a class="btn outline" href="https://www.un.org/sustainabledevelopment/es/peace-justice/" target="_blank" rel="noopener">ODS 16 (paz, justicia e instituciones)</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="contenido" class="card section reveal">
+          <div class="body">
+            <h3>Mecanismos y principios</h3>
+            <ul class="bullets">
+              <li><strong>Mecanismos</strong>: cabildos abiertos, presupuestos participativos, consejos consultivos, audiencias públicas.</li>
+              <li><strong>Transparencia</strong>: datos abiertos, rendición de cuentas, portales de seguimiento.</li>
+              <li><strong>Educación</strong>: formación y cultura ambiental para participación informada.</li>
+            </ul>
+            <div class="strip" style="margin-top:10px">
+              <img alt="Asamblea" src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&fit=crop&w=900&q=60"/>
+              <img alt="Ciudadanía" src="https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?auto=format&fit=crop&w=900&q=60"/>
+              <img alt="Instituciones" src="img/par1.jpg"/>
+            </div>
+            <h2></h2>
+            <p>🔹 Participación social
+
+            La participación social es el involucramiento de ciudadanos, comunidades y organizaciones civiles en la planeación, ejecución y evaluación de políticas y proyectos.
+
+            Objetivo: Garantizar que las decisiones reflejen las necesidades y valores de la población.
+
+            Formas de participación:
+
+            Creación de comités comunitarios.
+
+            Voluntariado ambiental.
+
+            Campañas educativas y de concientización.
+
+            Denuncia ciudadana frente a daños ambientales.
+
+            Consultas públicas para evaluar proyectos.
+
+            Ejemplo: Comunidades rurales que gestionan proyectos de ecoturismo y conservación forestal.
+
+            <br>🔹 Participación institucional
+
+            La participación institucional integra los esfuerzos de organismos gubernamentales, empresas, instituciones académicas y ONGs para crear políticas y estrategias sustentables.
+
+            <br>Gobiernos:
+
+            Elaboran leyes ambientales, regulaciones y planes de desarrollo.
+
+            Fomentan incentivos para energías limpias y conservación.
+
+           <br> Empresas:
+
+            Adoptan prácticas de responsabilidad social empresarial (RSE).
+
+            Implementan procesos de economía circular y reducción de residuos.
+
+            <br>Instituciones educativas:
+
+            Generan conocimiento científico.
+
+            Forman profesionales con enfoque ambiental.
+
+            <br>ONGs:
+
+            Desarrollan proyectos de conservación.
+
+            Presionan a gobiernos y empresas para actuar con ética ambiental.
+
+            <br>🔹 Beneficios de la participación conjunta
+
+            <br> Mayor legitimidad: Las decisiones reflejan las necesidades sociales.
+
+            <br>Protección ambiental efectiva: Se combinan recursos y capacidades.
+
+            <br>Innovación: Se fomenta la investigación y desarrollo de nuevas soluciones.
+
+            <br>Educación y conciencia ambiental: La sociedad se sensibiliza sobre su papel en la sustentabilidad.
+
+            <br>Economía responsable: Impulso de actividades productivas sostenibles.
+
+            <br>🔹 Ejemplos en la práctica
+
+           <br> México:
+
+            Programas de Pago por Servicios Ambientales (CONAFOR).
+
+            Participación de comunidades indígenas en conservación de selvas.
+
+            <br>Internacional:
+
+            Agenda 2030 y Objetivos de Desarrollo Sostenible (ODS) de la ONU.
+
+            Acuerdos internacionales como el Protocolo de Kioto y el Acuerdo de París.</p>
+          </div>
+        </div>
+
+        <div class="card section reveal">
+          <div class="body">
+            <h3>Ejemplos de acción</h3>
+            <ul class="bullets">
+              <li>Consejos ciudadanos para gestión de residuos.</li>
+              <li>Veedurías ambientales y observatorios locales.</li>
+              <li>Mapeos participativos y presupuestos verdes.</li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <div class="muted">© <span id="y"></span> Actividad Fundamental 1 - Equipo 2</div>
+      <div><a class="link" href="#" id="toTop">Volver arriba</a> · <a class="link" href="index.html">Inicio</a></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('toTop').addEventListener('click', e => { e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); });
+
+    const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    const fileInput=document.getElementById('file'), fileList=document.getElementById('fileList');
+    fileInput.addEventListener('change',()=>{fileList.innerHTML=[...fileInput.files].map(f=>`• ${f.name} (${(f.size/1024).toFixed(1)} KB)`).join('<br>')||'Aún no hay archivos.'});
+
+    const path = location.pathname.split('/').pop() || 'participacion.html';
+    document.querySelectorAll('#menu a').forEach(a => { if (a.getAttribute('href').endsWith(path) || (path==='' && a.getAttribute('href').endsWith('participacion.html'))) a.classList.add('active'); });
+  </script>
+</body>
+</html>
